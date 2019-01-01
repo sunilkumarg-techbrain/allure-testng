@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Allure testng test suite" parallel="tests" thread-count="1" >
+	
+	<parameter name="hubUrl" value="http://192.168.0.115:5555/wd/hub" />
+	<parameter name="remote" value="false" />
+	<parameter name="browser" value="CHROME" />
+	<parameter name="screenshotOnSuccess" value="on" />
+	
+
+	<test name="Allure Testng test - thread 1">
+		<groups>
+			<run>				
+			</run>
+		</groups>
+		<classes>
+			<class name="com.allure.AllureTestngTest" />
+		</classes>
+	</test>
+	
+</suite>
